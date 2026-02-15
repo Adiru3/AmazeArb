@@ -56,10 +56,10 @@ AmazeArb is distributed as a premium software tool. To get access:
 Join our community of elite traders to discuss strategies, share profits, and get 24/7 support.
 
 - **Official Bot:** [@AmazeArbbot](https://t.me/AmazeArbbot)
-- **Developer:** [@Adiru](https://t.me/Adiru)
 
 ---
 
 *Disclaimer: Cryptocurrency trading involves risk. AmazeArb provides the tools for arbitrage but does not guarantee profits. Trade responsibly.*
 
 &copy; 2026 AmazeArb Team. All rights reserved.
+
