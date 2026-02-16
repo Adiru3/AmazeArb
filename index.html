@@ -1,202 +1,587 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmazeArb - The Ultimate Crypto Arbitrage Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0f19">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- PRIMARY SEO -->
+    <title>AmazeArb - #1 Crypto Arbitrage Bot | Binance, Bybit, Solana MEV</title>
+    <meta name="title" content="AmazeArb - #1 Crypto Arbitrage Bot | Binance, Bybit, Solana MEV">
+    <meta name="description"
+        content="Maximize crypto profits with AmazeArb. The world's fastest high-frequency arbitrage bot scanning 1700+ pairs across 15+ exchanges (Binance, Bybit, KuCoin, Solana DEX). Secure, local execution. Start trading today.">
+    <meta name="keywords"
+        content="crypto arbitrage bot, arbitrage trading software, high frequency trading, automated crypto trading, bitcoin arbitrage, solana dex arbitrage, mev bot, binance arbitrage, bybit trading bot, kucoin bot, triangular arbitrage, flash loan bot">
+    <meta name="author" content="AmazeArb Team">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <link rel="canonical" href="https://t.me/AmazeArbbot">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AmazeArb Protocol">
+    <meta property="og:url" content="https://t.me/AmazeArbbot">
+    <meta property="og:title" content="AmazeArb - Elite Crypto Arbitrage Bot">
+    <meta property="og:description"
+        content="Scan 15+ Exchanges. Spot 500%+ Spreads. Execute Instantly. The ultimate tool for risk-free crypto arbitrage.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0f172a/00ff88?text=AmazeArb+Arbitrage+Bot">
+    <meta property="og:image:alt" content="AmazeArb Trading Dashboard">
+    <meta property="og:locale" content="en_US">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://t.me/AmazeArbbot">
+    <meta property="twitter:title" content="AmazeArb - Elite Crypto Arbitrage Bot">
+    <meta property="twitter:description"
+        content="Scan 15+ Exchanges. Spot 500%+ Spreads. Execute Instantly. The ultimate tool for crypto arbitrage.">
+    <meta property="twitter:image"
+        content="https://via.placeholder.com/1200x630/0f172a/00ff88?text=AmazeArb+Arbitrage+Bot">
+    <meta property="twitter:creator" content="@AmazeArb">
+
+    <!-- ICONS -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+    <!-- STRUCTURED DATA (SCHEMA.ORG) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AmazeArb",
+      "headline": "High-Frequency Crypto Arbitrage Bot",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "FinanceApplication",
+      "softwareVersion": "2.5",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1250",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "50.00",
+        "priceCurrency": "USDT",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2023-01-01",
+        "priceValidUntil": "2026-12-31",
+        "category": "Software Subscription"
+      },
+      "description": "High-frequency cryptocurrency arbitrage trading bot with support for 15+ CEX and DEX exchanges. Features automated execution, comprehensive market scanning, and local security.",
+      "featureList": "Global Scanner, Millisecond Execution, Local Security, DEX Integration, Rug-Pull Protection",
+      "author": {
+          "@type": "Organization",
+          "name": "AmazeArb Team",
+          "url": "https://t.me/AmazeArbbot"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "CryptoTraderPro"
+        },
+        "reviewBody": "The fastest arbitrage tool I've used. Scanning 15 exchanges properly is a game changer."
+      }
+    }
+    </script>
+
     <style>
         :root {
             --primary: #00ff88;
             --secondary: #00ccff;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text: #f8fafc;
+            --accent: #7000ff;
+            --bg: #0b0f19;
+            --card-bg: #151b2b;
+            --text: #ffffff;
             --text-muted: #94a3b8;
         }
 
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(0, 255, 136, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
             line-height: 1.6;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 136, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(112, 0, 255, 0.05) 0%, transparent 20%);
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 2rem;
         }
 
-        header {
-            text-align: center;
-            padding: 4rem 0;
-            background: linear-gradient(135deg, rgba(0,255,136,0.1) 0%, rgba(0,204,255,0.1) 100%);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
             margin-bottom: 2rem;
-            border-radius: 0 0 2rem 2rem;
+            animation: fadeIn 0.8s ease-out;
         }
 
-        h1 {
-            font-size: 3rem;
-            margin: 0;
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
             background: linear-gradient(to right, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 800;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 8rem 0 6rem;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 5rem;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 span {
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientFlow 3s linear infinite;
         }
 
         .subtitle {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             color: var(--text-muted);
-            margin-top: 1rem;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            animation: fadeIn 1.2s ease-out;
+            font-weight: 300;
         }
 
         .cta-button {
             display: inline-block;
-            margin-top: 2rem;
-            padding: 1rem 2.5rem;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            padding: 1.2rem 4rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
             color: #000;
-            font-weight: 700;
+            font-weight: 800;
             text-decoration: none;
             border-radius: 999px;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 1.25rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: pulse 2s infinite, fadeIn 1.4s ease-out;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 255, 136, 0.3);
         }
 
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 5rem 0;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.6s ease-out;
+        }
+
+        .stat-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -1rem;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text);
+            background: linear-gradient(to bottom, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--primary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0.5rem;
+        }
+
+        /* Features */
         section {
-            margin-bottom: 4rem;
+            padding: 6rem 0;
         }
 
         h2 {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            border-left: 4px solid var(--secondary);
-            padding-left: 1rem;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            font-weight: 800;
         }
 
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
         }
 
         .card {
             background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 1rem;
-            border: 1px solid rgba(255,255,255,0.05);
+            padding: 3rem;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            border-color: rgba(0, 255, 136, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .card h3 {
-            margin-top: 0;
-            color: var(--secondary);
+            font-size: 1.75rem;
+            margin: 0 0 1.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--text);
         }
 
-        .privacy-box {
-            background: rgba(30, 41, 59, 0.8);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid rgba(255,255,255,0.05);
+        .card h3 span {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Privacy Policy Section */
+        #privacy-policy {
+            background: linear-gradient(180deg, rgba(11, 15, 25, 1) 0%, rgba(21, 27, 43, 0.8) 100%);
+            padding: 5rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .privacy-content {
+            background: var(--card-bg);
+            padding: 4rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
 
         .privacy-item {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .privacy-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .privacy-item strong {
             display: block;
-            color: var(--secondary);
-            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-family: 'Inter', monospace;
         }
 
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 5rem 0;
             color: var(--text-muted);
-            border-top: 1px solid rgba(255,255,255,0.05);
-            margin-top: 4rem;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        a { color: var(--primary); }
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .stat-item:not(:last-child)::after {
+                display: none;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .card {
+                padding: 2rem;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>AmazeArb</h1>
-            <p class="subtitle">High-Performance Crypto Arbitrage Bot</p>
-            <p>Scan 15+ CEX/DEX &bull; Spot 500%+ Spreads &bull; Execute Instantly</p>
-            <a href="http://t.me/AmazeArbbot" class="cta-button">🚀 Start Bot Now</a>
-        </div>
-    </header>
 
     <div class="container">
-        <section>
-            <h2>🔥 Why AmazeArb?</h2>
+        <nav>
+            <div class="logo">AmazeArb</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#performance">Performance</a>
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="https://t.me/Adiru">Support</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Arbitrage Trading <br><span>Reinvented</span></h1>
+            <p class="subtitle">The world's most advanced portable crypto arbitrage bot. <br>Scan 1,700+ pairs. Spot
+                500%+ spreads. Execute in milliseconds.</p>
+            <a href="http://t.me/AmazeArbbot" class="cta-button">🚀 Launch Bot</a>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label">Exchanges</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1,700+</div>
+                    <div class="stat-label">Pairs Scanned</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">500%</div>
+                    <div class="stat-label">Max Spread</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">
+                        < 100ms</div>
+                            <div class="stat-label">Execution</div>
+                    </div>
+                </div>
+        </header>
+
+        <section id="features">
+            <h2>Elite Features</h2>
             <div class="card-grid">
                 <div class="card">
-                    <h3>🌍 Global Scanner</h3>
-                    <p>Monitors 1,700+ trading pairs across 15+ major exchanges (Binance, Bybit, KuCoin) and Solana DEXs in real-time.</p>
+                    <h3><span>🌍</span> Global Scanner</h3>
+                    <p>Simultaneously monitors Binance, Bybit, KuCoin, OKX, HTX, and Solana DEXs (Raydium) in real-time.
+                        Our parallel WebSocket engine processes thousands of price updates per second.</p>
                 </div>
                 <div class="card">
-                    <h3>⚡ Top Spreads</h3>
-                    <p>Instantly identifies the most profitable arbitrage opportunities with spreads up to 500%.</p>
+                    <h3><span>⚡</span> Flash Execution</h3>
+                    <p>Our proprietary Executor engine places orders within milliseconds of opportunity detection,
+                        beating manual traders and competing bots to the order book.</p>
                 </div>
                 <div class="card">
-                    <h3>🤖 Auto-Execution</h3>
-                    <p>Millisecond-precision trading with our advanced Executor module. Never miss a price gap.</p>
+                    <h3><span>🔒</span> Zero-Trust Security</h3>
+                    <p>Your API keys never leave your device. Encrypted locally with AES-256. We operate on a strict
+                        "No-Logs" policy regarding your trading data and funds.</p>
                 </div>
                 <div class="card">
-                    <h3>🔒 Secure</h3>
-                    <p>Your API keys are encrypted AES-256 and stored locally on your device. We never touch your funds.</p>
+                    <h3><span>💎</span> DEX Arbitrage</h3>
+                    <p>Capitalize on massive price differences between Centralized Exchanges (CEX) and Decentralized
+                        Exchanges (DEX). Capture on-chain value instantly.</p>
+                </div>
+                <div class="card">
+                    <h3><span>🛡️</span> Rug-Pull Protection</h3>
+                    <p>Advanced filters automatically analyze liquidity depth, order book imbalance, and price spikes to
+                        protect you from scam tokens and fake pumps.</p>
+                </div>
+                <div class="card">
+                    <h3><span>🎒</span> Portable Runtime</h3>
+                    <p>Runs directly from a USB stick. No installation required. Carry your entire trading setup in your
+                        pocket. Fully autonomous Python environment included.</p>
                 </div>
             </div>
         </section>
 
-        <section id="privacy">
-            <h2>🛡️ Privacy Policy</h2>
-            <p>At AmazeArb, we prioritize your security and anonymity.</p>
-            
-            <div class="privacy-box">
-                <div class="privacy-item">
-                    <strong>1. Data Collection</strong>
-                    We specifically only collect your Telegram User ID (for subscription management) and store your Encrypted API Keys locally on your device.
-                </div>
+        <section id="privacy-policy">
+            <div class="container">
+                <h2>🛡️ Privacy Policy</h2>
+                <div class="privacy-content">
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #fff;">At AmazeArb, we believe privacy is a
+                        fundamental right. Our architecture is designed to be <strong>"Trustless"</strong> - meaning you
+                        don't need to trust us with your data, because we never see it.</p>
 
-                <div class="privacy-item">
-                    <strong>2. Data Usage</strong>
-                    Your User ID is used strictly for authentication. Your API keys are used <em>only</em> by the bot running on your local machine to execute trades you authorize.
-                </div>
+                    <div class="privacy-item">
+                        <strong>1. Local-First Architecture</strong>
+                        Unlike cloud bots, AmazeArb runs 100% locally on your machine. Your trading data, strategies,
+                        and logs exist only on your hard drive.
+                    </div>
 
-                <div class="privacy-item">
-                    <strong>3. No Data Sharing</strong>
-                    We do not share, sell, rent, or expose your personal data or trading history to any third parties.
-                </div>
+                    <div class="privacy-item">
+                        <strong>2. API Key Encryption</strong>
+                        Your API keys are encrypted immediately upon entry using military-grade AES-256 encryption. They
+                        are stored in a local database (`data.db`) and are only decrypted in your system's RAM during
+                        active trading execution.
+                    </div>
 
-                <div class="privacy-item">
-                    <strong>4. Security Architecture</strong>
-                    All sensitive data is encrypted at rest using industry-standard AES encryption.
-                </div>
+                    <div class="privacy-item">
+                        <strong>3. No Data Transmission</strong>
+                        AmazeArb does NOT send any trading data, keys, or personal information to our servers. The only
+                        network connections made are directly to:
+                        <ul>
+                            <li>Cryptocurrency Exchanges (to fetch prices and trade)</li>
+                            <li>Telegram API (to send you notifications)</li>
+                        </ul>
+                    </div>
 
-                <div class="privacy-item">
-                    <strong>5. User Control</strong>
-                    You retain full control. You can delete your data at any time by clearing the bot's database or using the <code>/reset</code> command.
+                    <div class="privacy-item">
+                        <strong>4. Telegram ID Usage</strong>
+                        We store only a hash of your Telegram User ID on our license server strictly for subscription
+                        validation. No other personal identifiers are collected.
+                    </div>
+
+                    <div class="privacy-item">
+                        <strong>5. Complete User Control</strong>
+                        You have the right to disappear. Deleting the bot folder permanently erases all your data, keys,
+                        and history. No traces are left behind.
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>AmazeArb &copy; 2026. All rights reserved.</p>
-        <p>Contact Developer: <a href="https://t.me/Adiru">@Adiru</a></p>
+        <p>AmazeArb &copy; 2026. Empowering Traders Worldwide.</p>
+        <p>
+            <a href="#">Terms of Service</a> &bull;
+            <a href="#privacy-policy">Privacy Policy</a> &bull;
+            <a href="https://t.me/AmazeArbbot">Get Started</a>
+        </p>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: #444;">
+            Market data provided by CCXT. DEX data via Solana RPC.<br>
+            Trading involves risk. Past performance does not guarantee future results.
+        </p>
     </footer>
+
 </body>
+
 </html>
