@@ -1,6 +1,7 @@
 # AmazeArb - High-Performance Crypto Arbitrage Bot 🚀
 
 <img width="422" height="717" alt="image" src="https://github.com/user-attachments/assets/d92a0780-19ef-49a0-bb4e-19fb2d85e7a7" />
+<img width="402" height="402" alt="image" src="https://github.com/user-attachments/assets/ed8ccb34-e8f7-4dc6-abad-7ffbc2e911c2" />
 
 **AmazeArb** is an elite, high-frequency cryptocurrency arbitrage trading bot designed for professional traders. It scans over **1,700 trading pairs** across **15+ major exchanges** (CEX & DEX) simultaneously to identify and execute risk-free arbitrage opportunities with spreads up to **500%**.
 
@@ -62,5 +63,6 @@ Join our community of elite traders to discuss strategies, share profits, and ge
 *Disclaimer: Cryptocurrency trading involves risk. AmazeArb provides the tools for arbitrage but does not guarantee profits. Trade responsibly.*
 
 &copy; 2026 AmazeArb Team. All rights reserved.
+
 
 
