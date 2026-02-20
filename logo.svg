@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="256" cy="256" r="240" fill="#020617" stroke="url(#neonGrad)" stroke-width="10"/>
+  
+  <!-- Glow Effect Background -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#neonGrad)" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Main Icon Group -->
+  <g transform="translate(106, 106) scale(0.6)" filter="url(#glow)">
+    <!-- Stylized 'A' / Pulse -->
+    <path d="M250 50 L400 450 L320 450 L280 340 L220 340 L180 450 L100 450 Z" fill="none" stroke="url(#neonGrad)" stroke-width="40" stroke-linejoin="round"/>
+    <path d="M150 250 L350 250" stroke="url(#neonGrad)" stroke-width="30"/>
+    
+    <!-- Lightning Bolt Accent -->
+    <path d="M300 150 L380 50 L320 250 L420 250 L250 450 L280 300 L180 300 Z" fill="url(#neonGrad)" stroke="#020617" stroke-width="10"/>
+  </g>
+</svg>

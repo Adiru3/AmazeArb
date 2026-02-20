@@ -1,73 +1,55 @@
-# AmazeArb - High-Performance Crypto Arbitrage Bot 🚀
+# AmazeArb - High-Performance Crypto Arbitrage Terminal 🚀
 
-<img width="1294" height="194" alt="image" src="https://github.com/user-attachments/assets/2e7606db-7517-4c5f-968d-76013539209c" />
+![AmazeArb Banner](https://via.placeholder.com/1200x400/0f172a/00ff88?text=AmazeArb+Arbitrage+Bot)
 
-<img width="1280" height="205" alt="image" src="https://github.com/user-attachments/assets/3cce9a5e-bca0-41b2-9346-3ca2c8375e08" />
+**AmazeArb** is an elite, high-frequency cryptocurrency arbitrage trading bot designed for professional traders. It scans over **1,700 trading pairs** across **21 major exchanges** (CEX & DEX) simultaneously to identify and execute risk-free arbitrage opportunities.
 
-<img width="544" height="676" alt="image" src="https://github.com/user-attachments/assets/0a23d21c-bd12-4d19-88ed-626fa7cc1c81" />
-<img width="502" height="543" alt="image" src="https://github.com/user-attachments/assets/dd26ea09-eddc-4da6-8b9e-f0465d3081f0" />
+## 🔥 Key Arbitrage Features
 
-**AmazeArb** is an elite, high-frequency cryptocurrency arbitrage trading bot designed for professional traders. It scans over **1,700 trading pairs** across **15+ major exchanges** (CEX & DEX) simultaneously to identify and execute risk-free arbitrage opportunities with spreads up to **500%**.
+### 🌍 Universal Market Scanner
+- **Massive Scope:** Continuously monitors Binance, Bybit, OKX, HTX, Bitget, Gate, KuCoin, Kraken, BingX, LBank, WhiteBIT, Bitmart, CoinEx, Ascendex, Bitstamp, Coinbase, Bitfinex, Digifinex.
+- **DEX Integration:** Solves global pricing by aggregating Raydium and Orca (Solana DEX pools).
+- **Millisecond Execution:** The engine parallelizes API scans to achieve <100ms discovery times for true real-time quotes.
 
-> ⚠️ **Note:** This repository serves as the official documentation and issue tracker for AmazeArb. The core engine is proprietary software available exclusively via our Telegram Bot.
+### 🔄 Triangular Arbitrage (Intra-Exchange)
+Executes complex 3-step trades entirely within a single exchange (e.g., `USDT → BTC → ETH → USDT`). By mathematically tracing cross-base pairs, AmazeArb locks in compound profits with zero withdrawal fees or block times.
 
----
+### 📈 Funding-to-Funding Arbitrage (Inter-Exchange)
+Automatically detects massive yield differentials in Perpetual Futures. The bot highlights opportunities to:
+1. **Short** an asset on an exchange paying high positive funding.
+2. **Long** the same asset on an exchange charging negative funding.
+3. Collect the APR spread entirely risk-free from market volatility.
 
-## 🔥 Key Features
+### 👥 "Ghost" P2P Arbitrage
+Bypasses advanced Cloudflare protections to scrape live P2P rates across 12 markets simultaneously. Matches raw Fiat/Crypto premium prices against real-time Spot books for instantaneous arbitrage detection.
 
-### 🌍 Global Market Scanner
-- **Real-Time Monitoring:** Scans Binance, Bybit, KuCoin, OKX, HTX, Kraken, and 10+ other exchanges.
-- **DEX Integration:** Fully integrated with Solana DEXs (Raydium, Orca) to catch massive on-chain price disparities.
-- **Instant Discovery:** innovative parallel scanning engine updates prices in milliseconds.
-
-### ⚡ Millisecond Execution
-- **Automated Trading:** "Set and Forget" mode automatically executes profitable trades.
-- **Smart Routing:** optimised order placement to minimize slippage and maximize profit.
-- **Safety First:** Built-in protection against rug-pulls, fake tokens, and liquidity traps.
-
-### 🛡️ Security & Privacy
-- **Client-Side Execution:** The bot runs **locally on your machine**.
-- **Zero-Access Policy:** usage of **Encrypted API Keys**. We never have access to your funds or withdrawal permissions.
-- **No Middlemen:** All trades happen directly between your exchange accounts.
+### 💎 Liquid Staking & Stablecoin Peg Deviations
+Deep monitoring of Liquid Staking Tokens (LST/LRT) like `stETH`, `mSOL`, and `jitoSOL`. Instantly alerts users to severe Discounts or Premiums against base assets. Also tracks 20+ Stablecoins for rapid De-peg alerts.
 
 ---
 
-## 🚀 How to Get Started
+## 🎁 Integrated Airdrop Radar
+Why just trade? AmazeArb is natively connected to elite Airdrop radars. It aggregates real-time airdrop data directly into the bot UI.
+- Filter by Category: Latest, Hot, Potential.
+- Built-in KYC filters.
+- Telegram-native step-by-step guides.
 
-AmazeArb is distributed as a premium software tool. To get access:
+---
 
-1.  **Start the Bot:** Open [@AmazeArbbot](https://t.me/AmazeArbbot) on Telegram.
-2.  **Get a License:** Choose a subscription plan that fits your trading volume.
-3.  **Download & Run:** Receive your unique build and `runtime.bat` for instant, portable launch.
+## 🚀 Access the Bot
 
+AmazeArb is distributed as a premium execution engine directly through Telegram.
 [**👉 Click Here to Launch AmazeArb Bot**](https://t.me/AmazeArbbot)
 
 ---
 
-## 📊 Performance
-
-| Feature | Standard Bot | **AmazeArb** |
-| :--- | :---: | :---: |
-| **Exchanges Scanned** | 2-3 | **15+ (CEX + DEX)** |
-| **Pairs Monitored** | ~50 | **1,700+** |
-| **Scan Speed** | 5-10 sec | **< 100ms** |
-| **Setup Time** | Hours | **< 2 Minutes** |
-| **Portable** | No | **Yes (USB Ready)** |
-
----
-
 ## 💬 Support & Community
-
-Join our community of elite traders to discuss strategies, share profits, and get 24/7 support.
+Join our community of elite traders to discuss strategies, share profits, and get 24/7 support via the built-in ticketing system.
 
 - **Official Bot:** [@AmazeArbbot](https://t.me/AmazeArbbot)
 
 ---
 
-*Disclaimer: Cryptocurrency trading involves risk. AmazeArb provides the tools for arbitrage but does not guarantee profits. Trade responsibly.*
+*Disclaimer: Cryptocurrency trading involves significant risks. AmazeArb provides high-frequency analytics and execution tools but does not guarantee profits. Use at your own risk.*
 
 &copy; 2026 AmazeArb Team. All rights reserved.
-
-
-
-
