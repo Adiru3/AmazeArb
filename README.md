@@ -1,7 +1,11 @@
 # AmazeArb - High-Performance Crypto Arbitrage Bot 🚀
 
-<img width="422" height="717" alt="image" src="https://github.com/user-attachments/assets/d92a0780-19ef-49a0-bb4e-19fb2d85e7a7" />
-<img width="402" height="402" alt="image" src="https://github.com/user-attachments/assets/ed8ccb34-e8f7-4dc6-abad-7ffbc2e911c2" />
+<img width="1294" height="194" alt="image" src="https://github.com/user-attachments/assets/2e7606db-7517-4c5f-968d-76013539209c" />
+
+<img width="1280" height="205" alt="image" src="https://github.com/user-attachments/assets/3cce9a5e-bca0-41b2-9346-3ca2c8375e08" />
+
+<img width="544" height="676" alt="image" src="https://github.com/user-attachments/assets/0a23d21c-bd12-4d19-88ed-626fa7cc1c81" />
+<img width="502" height="543" alt="image" src="https://github.com/user-attachments/assets/dd26ea09-eddc-4da6-8b9e-f0465d3081f0" />
 
 **AmazeArb** is an elite, high-frequency cryptocurrency arbitrage trading bot designed for professional traders. It scans over **1,700 trading pairs** across **15+ major exchanges** (CEX & DEX) simultaneously to identify and execute risk-free arbitrage opportunities with spreads up to **500%**.
 
@@ -63,6 +67,7 @@ Join our community of elite traders to discuss strategies, share profits, and ge
 *Disclaimer: Cryptocurrency trading involves risk. AmazeArb provides the tools for arbitrage but does not guarantee profits. Trade responsibly.*
 
 &copy; 2026 AmazeArb Team. All rights reserved.
+
 
 
 
